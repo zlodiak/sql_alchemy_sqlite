@@ -8,7 +8,7 @@ metadata = MetaData()
 
 quotes = Table('quotes', metadata,
     Column('id', Integer, primary_key=True),
-    Column('text', Integer, nullable=False),
+    Column('text', String, nullable=False),
     Column('weight', Integer, nullable=False)
 )
 metadata.create_all(engine)
